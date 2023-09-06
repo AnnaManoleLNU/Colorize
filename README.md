@@ -8,6 +8,5 @@ _Laboration 2 in software quality. Colour and theme generator for websites._
 - generate theme for colour
   - you may choose between 2, 3 or 4 colours that compliment your generated colour
     - get optimized font colour for your generated theme
-- generate custom colour
-  - choose between  pastels, lights or darks
+- generate custom colour, you may choose between  pastels, lights or darks
     - generate theme for custom colour with the same features as for random colour
