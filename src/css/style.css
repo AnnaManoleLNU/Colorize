@@ -1,0 +1,6 @@
+/* Create a square that is 50px in height and width */
+#testDiv {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}

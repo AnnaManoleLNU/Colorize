@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js",
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AnnaManoleLNU/Colorize/issues"
   },
-  "homepage": "https://github.com/AnnaManoleLNU/Colorize#readme"
+  "homepage": "https://github.com/AnnaManoleLNU/Colorize#readme",
+  "dependencies": {
+    "vite": "^4.4.9"
+  }
 }
