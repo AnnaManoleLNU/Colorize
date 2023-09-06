@@ -1,0 +1,20 @@
+{
+  "name": "colorize",
+  "version": "1.0.0",
+  "description": "add colour to your applications",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaManoleLNU/Colorize.git"
+  },
+  "author": "Anna Manole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaManoleLNU/Colorize/issues"
+  },
+  "homepage": "https://github.com/AnnaManoleLNU/Colorize#readme"
+}
