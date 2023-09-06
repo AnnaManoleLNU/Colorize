@@ -1,18 +1,21 @@
-import { ColourGenerator } from "./ColourGenerator.js"
+import { ColorGenerator } from "./ColorGenerator.js"
 
-// Create a new instance of the ColourGenerator class.
-const colourGenerator = new ColourGenerator()
+// Create a new instance of the ColorGenerator class.
+const colorGenerator = new ColorGenerator()
 
-// Generate a random colour using the colourGenerator instance.
-const randomColour = colourGenerator.generateRandomColour()
+// Generate a random color using the colorGenerator instance.
+const randomColor = colorGenerator.generateRandomColor()
+const brightColor = colorGenerator.generateLightColor()
+const darkColor = colorGenerator.generateDarkColor()
 
+// Test the random color by setting it as the background color of the <h1> element.
+const heading = document.querySelector("h1")
+heading.style.color = darkColor
 
-// Test the random colour by setting it as the colour of the <p> element.
-console.log(randomColour)
-console.log('hello from the index.js file')
+// Test the random color by setting it as the color of the <p> element.
 const paragraph = document.querySelector("p")
-paragraph.style.color = randomColour
+paragraph.style.color = randomColor
 
+// Set the random color on a <div> element.
 const testDiv = document.querySelector("#testDiv")
-console.log(testDiv)
-testDiv.style.backgroundColor = randomColour
+testDiv.style.backgroundColor = brightColor
