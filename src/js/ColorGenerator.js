@@ -4,6 +4,7 @@
 export class ColorGenerator {
   // The color is an array of 3 numbers between 0 and 255.
   #color
+
   constructor() {
     this.#color = [0, 0, 0];
   }
