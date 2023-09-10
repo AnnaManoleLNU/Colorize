@@ -14,7 +14,7 @@ export class ColorSchemeGenerator {
    */
   generateMonochromaticColorScheme(color) {
     for (let i = 0; i <= 3; i++) {
-      let newColor = color
+      let newColor
       if (i === 0) {
         newColor = this.#generateLightColor(color)
       } else if (i === 1) {
@@ -24,18 +24,51 @@ export class ColorSchemeGenerator {
       }
       this.#colorScheme.push(newColor)  
     }
+    return this.#colorScheme
   }
 
 
 
   #generateLightColor(color) {
+    // turn the string into an array
+    color = color.split("(")[1].split(")")[0].split(", ")
+    console.log(color)
+
+    // from a given color generate a light color
+    let lightColor = [
+      color[0] - (Math.floor(Math.random() * 100)),
+      color[1] - (Math.floor(Math.random() * 100)),
+      color[2] - (Math.floor(Math.random() * 100))
+    ]
+    // turn the array into a string
+    lightColor = "rgb(" + lightColor.join(", ") + ")"
+    return lightColor
 
   }
 
   #generateDarkColor(color) {
+    // from a given color generate a dark color
+    color = color.split("(")[1].split(")")[0].split(", ")
+
+    let darkColor = [
+      color[0] + 1,
+      color[1] + 2,
+      color[2] + 3
+    ]
+    // turn the array into a string
+    darkColor = "rgb(" + darkColor.join(", ") + ")"
+    return darkColor
   }
 
   #generateMutedColor(color) {
+    let mutedColor = [
+      Math.floor(Math.random() * 100) + 100,
+      Math.floor(Math.random() * 100) + 100,
+      Math.floor(Math.random() * 100) + 100
+    ]
+    // turn the array into a string
+    mutedColor = "rgb(" + mutedColor.join(", ") + ")"
+    return mutedColor
 
   }
 

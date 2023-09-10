@@ -1,5 +1,5 @@
 export default {
-  root: 'src',
+  root: 'test application',
   build: {
     outDir: '../dist',
     target: 'esnext'

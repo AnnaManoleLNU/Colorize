@@ -1,5 +1,5 @@
-import { ColorGenerator } from "./ColorGenerator.js"
-import { ColorSchemeGenerator } from "./ColorSchemeGenerator.js"
+import { ColorGenerator } from "../src/js/ColorGenerator.js"
+import { ColorSchemeGenerator } from "../src/js/ColorSchemeGenerator.js"
 
 // Create a new instance of the ColorGenerator class.
 const colorGenerator = new ColorGenerator()
@@ -24,8 +24,13 @@ testDiv.style.backgroundColor = randomColor
 // Generate a monochromatic color scheme.
 const colorSchemeGenerator = new ColorSchemeGenerator()
 const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(randomColor)
+console.log('the color scheme is', colorScheme)
 
 const testDiv2 = document.querySelector("#testDiv2")
 const testDiv3 = document.querySelector("#testDiv3")
 const testDiv4 = document.querySelector("#testDiv4")
+
+testDiv2.style.backgroundColor = colorScheme[0]
+testDiv3.style.backgroundColor = colorScheme[1]
+testDiv4.style.backgroundColor = colorScheme[2]
 
