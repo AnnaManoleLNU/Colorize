@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AnnaManoleLNU/Colorize#readme",
   "dependencies": {
+    "prettier": "^3.0.3",
     "vite": "^4.4.9"
   }
 }

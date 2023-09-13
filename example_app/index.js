@@ -1,5 +1,5 @@
-import { ColorGenerator } from "../src/js/ColorGenerator.js"
-import { ColorSchemeGenerator } from "../src/js/ColorSchemeGenerator.js"
+import { ColorGenerator } from "../lib/js/ColorGenerator.js"
+import { ColorSchemeGenerator } from "../lib/js/ColorSchemeGenerator.js"
 
 // Create a new instance of the ColorGenerator class.
 const colorGenerator = new ColorGenerator()
