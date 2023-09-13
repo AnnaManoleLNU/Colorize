@@ -35,4 +35,3 @@ testDiv1.style.backgroundColor = lightColor
 testDiv2.style.backgroundColor = colorScheme[0]
 testDiv3.style.backgroundColor = colorScheme[1]
 testDiv4.style.backgroundColor = colorScheme[2]
-
