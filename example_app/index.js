@@ -17,19 +17,21 @@ heading.style.color = darkColor
 const paragraph = document.querySelector("p")
 paragraph.style.color = lightColor
 
-// Set the random color on a <div> element.
-const testDiv = document.querySelector("#testDiv1")
-testDiv.style.backgroundColor = randomColor
-
 // Generate a monochromatic color scheme.
 const colorSchemeGenerator = new ColorSchemeGenerator()
-const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(randomColor)
+const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(lightColor)
 console.log('the color scheme is', colorScheme)
 
+// Select all the divs to test.
+const testDiv1 = document.querySelector("#testDiv1")
 const testDiv2 = document.querySelector("#testDiv2")
 const testDiv3 = document.querySelector("#testDiv3")
 const testDiv4 = document.querySelector("#testDiv4")
 
+// give the first div the color generated with the ColorGenerator
+testDiv1.style.backgroundColor = lightColor 
+
+// The other divs get their color from the color scheme, that was generated from the color.
 testDiv2.style.backgroundColor = colorScheme[0]
 testDiv3.style.backgroundColor = colorScheme[1]
 testDiv4.style.backgroundColor = colorScheme[2]
