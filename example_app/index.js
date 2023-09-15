@@ -34,4 +34,3 @@ testDiv1.style.backgroundColor = lightColor
 // The other divs get their color from the color scheme, that was generated from the color.
 testDiv2.style.backgroundColor = colorScheme[0]
 testDiv3.style.backgroundColor = colorScheme[1]
-testDiv4.style.backgroundColor = colorScheme[2]
