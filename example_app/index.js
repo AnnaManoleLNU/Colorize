@@ -19,7 +19,7 @@ paragraph.style.color = lightColor
 
 // Generate a monochromatic color scheme.
 const colorSchemeGenerator = new ColorSchemeGenerator()
-const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(lightColor)
+const colorScheme = colorSchemeGenerator.generateAnalogousColorScheme(darkColor)
 console.log('the color scheme is', colorScheme)
 
 // Select all the divs to test.
@@ -29,7 +29,7 @@ const testDiv3 = document.querySelector("#testDiv3")
 const testDiv4 = document.querySelector("#testDiv4")
 
 // give the first div the color generated with the ColorGenerator
-testDiv1.style.backgroundColor = lightColor 
+testDiv1.style.backgroundColor = darkColor 
 
 // The other divs get their color from the color scheme, that was generated from the color.
 testDiv2.style.backgroundColor = colorScheme[0]
