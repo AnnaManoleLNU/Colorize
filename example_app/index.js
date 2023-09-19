@@ -36,19 +36,15 @@ testDiv3.style.backgroundColor = colorScheme[1]
 
 // Test the FontColorGenerator class.
 const fontColorGenerator = new FontColorHelper()
-const luminanceDark = fontColorGenerator.calculateLuminance(darkColor)
-console.log("the luminance of the dark color is", luminanceDark)
-
-const luminanceLight = fontColorGenerator.calculateLuminance(lightColor)
-console.log("the luminance of the light color is", luminanceLight)
-
-const contrastRatio = fontColorGenerator.calculateContrastRatio(darkColor, lightColor)
-console.log("the contrast ratio is", contrastRatio)
 
 const paragraphBackground = document.getElementById("paragraphBackground")
-paragraphBackground.style.backgroundColor = lightColor
+paragraphBackground.style.backgroundColor = randomColor
+console.log("the background color is", randomColor)
 
-const fontColor = fontColorGenerator.suggestWhiteOrBlack(lightColor)
+const fontColor = fontColorGenerator.suggestWhiteOrBlackFont(randomColor)
 console.log("the font color is", fontColor)
 // apply it to the <p> element
 paragraph.style.color = fontColor
+
+const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(randomColor, fontColor)
+console.log("is the font color AA compliant?", aaCompliant)
