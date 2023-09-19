@@ -54,5 +54,3 @@ console.log("is the font color AA compliant?", aaCompliant)
 // Check if the font color is AAA compliant with the background color.
 const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(randomColor, fontColor)
 console.log("is the font color AAA compliant?", aaaCompliant)
-
-// Problem/bug, sometimes the font color is not AAA compliant with just black or white, but it is AA compliant.

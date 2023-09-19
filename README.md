@@ -17,7 +17,7 @@ Version: 1.0.0
 
 ## Installation
 1. Download the repository
-2. The repository contains a lib folder which implements the functionality of the Colorizer module. The lib folder contains the following files:
+2. The repository contains a ***lib folder*** which implements the functionality of the Colorizer module. The lib folder contains the following files:
     - ColorGenerator.js - for generating random, light and dark colors.
     - ColorSchemeGenerator.js - for generating monochromatic and analogous color schemes (2 other colors to compliment your color will be given in each case).
     - FontColorHelper.js - for checking if a font color is WCAG AA and WCAG AAA compliant with a given background color and for suggesting either black or white font color for a given background color.
@@ -28,6 +28,8 @@ import { ColorGenerator } from "<yourpathhere>"
 import { ColorSchemeGenerator } from "<yourpathhere>"
 import { FontColorHelper } from "<yourpathhere>"
 ```
+
+_Note that the example_app folder contains an example application that uses the Colorizer module. You may use it as a reference._
 
 
 ## Code example
@@ -82,4 +84,25 @@ const fontColor = fontColorGenerator.suggestWhiteOrBlackFont("rgb(200, 100, 0)")
 console.log("use this font color:", fontColor)
 
 ```
+
+## Tests
+Manual tests were performed using the example_app folder and the use cases are documented in TESTS.md.
+
+## Issues
+Problem: in some cases the font color is not WCAG AAA compliant when using rgb black or white. The color it is at least always WCAG AA compliant.
+
+## License
+MIT License - see the LICENSE.md file for details.
+
+## Version number and date of release
+v1.0.0 - 19/02/2023
+
+## Planned future development
+No future development planned. This is a student project given in a software quality course at Linnaeus University 2023.
+
+## Contributing
+You may contribute to this project by opening an issue.
+
+## Authors
+- [Anna Manole] - am224wd@student.lnu.se
 
