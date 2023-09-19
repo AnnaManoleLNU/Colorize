@@ -104,5 +104,5 @@ No future development planned. This is a student project given in a software qua
 You may contribute to this project by opening an issue.
 
 ## Authors
-- [Anna Manole] - am224wd@student.lnu.se
+Anna Manole - am224wd@student.lnu.se
 
