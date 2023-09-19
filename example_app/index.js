@@ -1,6 +1,6 @@
 import { ColorGenerator } from "../lib/js/ColorGenerator.js"
 import { ColorSchemeGenerator } from "../lib/js/ColorSchemeGenerator.js"
-import { FontColorGenerator } from "../lib/js/FontColorGenerator.js"
+import { FontColorHelper } from "../lib/js/FontColorHelper.js"
 
 // Create a new instance of the ColorGenerator class.
 const colorGenerator = new ColorGenerator()
@@ -35,7 +35,7 @@ testDiv2.style.backgroundColor = colorScheme[0]
 testDiv3.style.backgroundColor = colorScheme[1]
 
 // Test the FontColorGenerator class.
-const fontColorGenerator = new FontColorGenerator()
+const fontColorGenerator = new FontColorHelper()
 const luminanceDark = fontColorGenerator.calculateLuminance(darkColor)
 console.log("the luminance of the dark color is", luminanceDark)
 
@@ -46,9 +46,9 @@ const contrastRatio = fontColorGenerator.calculateContrastRatio(darkColor, light
 console.log("the contrast ratio is", contrastRatio)
 
 const paragraphBackground = document.getElementById("paragraphBackground")
-paragraphBackground.style.backgroundColor = darkColor
+paragraphBackground.style.backgroundColor = lightColor
 
-const fontColor = fontColorGenerator.generateFontColor(lightColor)
+const fontColor = fontColorGenerator.suggestWhiteOrBlack(lightColor)
 console.log("the font color is", fontColor)
 // apply it to the <p> element
-// paragraph.style.color = fontColor
+paragraph.style.color = fontColor
