@@ -32,6 +32,9 @@ import { FontColorHelper } from "<yourpathhere>"
 
 ## Code example
 ```javascript
+
+// ColorGenerator
+// Use the ColorGenerator class to generate a random color, a light color or a dark color.
 const colorGenerator = new ColorGenerator()
 
 // Generate a random color using the colorGenerator instance.
@@ -39,7 +42,14 @@ const randomColor = colorGenerator.generateRandomColor()
 const lightColor = colorGenerator.generateLightColor()
 const darkColor = colorGenerator.generateDarkColor()
 
-// Generate a theme for a given color.
+// Log the results to the console and use the rgb values for your project. The results will be in the following format: "rgb(0, 0, 0)", string.
+console.log(randomColor)
+console.log(lightColor)
+console.log(darkColor)
+
+
+// ColorSchemeGenerator
+// Use the ColorSchemeGenerator to generate a monochromatic or analogous color scheme for a given color.
 const colorSchemeGenerator = new ColorSchemeGenerator()
 const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(darkColor)
 const analogousColorScheme = colorSchemeGenerator.generateAnalogousColorScheme(lightColor)
@@ -48,20 +58,28 @@ const analogousColorScheme = colorSchemeGenerator.generateAnalogousColorScheme(l
 const myMonochromaticColorScheme = colorSchemeGenerator.generateMonochromaticColorScheme("rgb(200, 100, 0)")
 const myAnalogousColorScheme = colorSchemeGenerator.generateAnalogousColorScheme("rgb(200, 100, 0)")
 
+// Log the results to the console and use the rgb values for your project. The results will be displayed in an array of strings format: ["rgb(0, 0, 0)", "rgb(0, 0, 0)"]. Your color will not be included in the array, only the 2 other colors that were generated to compliment it.
 
-// Check if a specific font color is WCAG AA and WCAG AAA compliant with a specific background color.
+// FontColorHelper
+// Use the FontColorHelper to check if a specific font color is WCAG AA and WCAG AAA compliant with a specific background color.
 const fontColorHelper = new FontColorHelper()
-const fontColor = fontColorHelper.getFontColorForBackground(randomColor)
+const fontColor = "rgb(200, 200, 200)" // you may enter or generate your own font color here in RGB format
 const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(randomColor, fontColor)
 const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(randomColor, fontColor)
+// or you may enter your own font color/ background color in RGB format
+const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA("rgb(200, 100, 0)", "rgb(200, 200, 200)")
 
-// or you may enter your own font color/ background color
-const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA("#000000", "#ffffff")
+// Log the results to the console. You will get the results in a boolean format: true or false. Either your font color is compliant with the background color or it is not.
+console.log("is my font WCAG AA compliant?", aaCompliant)
+console.log("is my font WCAG AAA compliant?", aaaCompliant)
 
 // Suggest either white or black font color for a given background color.
 const fontColor = fontColorGenerator.const fontColor = fontColorGenerator.suggestWhiteOrBlackFont(randomColor)
+// or you may enter your own background color in RGB format
+const fontColor = fontColorGenerator.suggestWhiteOrBlackFont("rgb(200, 100, 0)")
 
-// In any of the cases you may log the results to the console and use the rgb values for your project.
+// Log the results to the console. You will get either a string that represents rgb white or rgb black. 
+console.log("use this font color:", fontColor)
 
 ```
 
