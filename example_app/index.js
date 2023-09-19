@@ -26,7 +26,6 @@ console.log('the color scheme is', colorScheme)
 const testDiv1 = document.querySelector("#testDiv1")
 const testDiv2 = document.querySelector("#testDiv2")
 const testDiv3 = document.querySelector("#testDiv3")
-const testDiv4 = document.querySelector("#testDiv4")
 
 // give the first div the color generated with the ColorGenerator
 testDiv1.style.backgroundColor = darkColor 
