@@ -48,7 +48,7 @@ console.log("the contrast ratio is", contrastRatio)
 const paragraphBackground = document.getElementById("paragraphBackground")
 paragraphBackground.style.backgroundColor = darkColor
 
-const fontColor = fontColorGenerator.generateFontColor(darkColor)
+const fontColor = fontColorGenerator.generateFontColor(lightColor)
 console.log("the font color is", fontColor)
 // apply it to the <p> element
-paragraph.style.color = fontColor
+// paragraph.style.color = fontColor
