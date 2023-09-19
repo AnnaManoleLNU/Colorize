@@ -44,3 +44,11 @@ console.log("the luminance of the light color is", luminanceLight)
 
 const contrastRatio = fontColorGenerator.calculateContrastRatio(darkColor, lightColor)
 console.log("the contrast ratio is", contrastRatio)
+
+const paragraphBackground = document.getElementById("paragraphBackground")
+paragraphBackground.style.backgroundColor = darkColor
+
+const fontColor = fontColorGenerator.generateFontColor(darkColor)
+console.log("the font color is", fontColor)
+// apply it to the <p> element
+paragraph.style.color = fontColor
