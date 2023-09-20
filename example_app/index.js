@@ -20,7 +20,7 @@ paragraph.style.color = lightColor
 
 // Generate a monochromatic color scheme.
 const colorSchemeGenerator = new ColorSchemeGenerator()
-const colorScheme = colorSchemeGenerator.generateAnalogousColorScheme(darkColor)
+const colorScheme = colorSchemeGenerator.generateAnalogousColorScheme("#ff0000")
 
 // Select all the divs to test.
 const testDiv1 = document.querySelector("#testDiv1")
