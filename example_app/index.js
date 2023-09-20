@@ -48,9 +48,9 @@ paragraph.style.color = fontColor
 
 
 // Check if the font color is AA compliant with the background color.
-const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(randomColor, fontColor)
-// console.log("is the font color AA compliant?", aaCompliant)
+const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(fontColor, randomColor)
+console.log("is the font color AA compliant?", aaCompliant)
 
 // Check if the font color is AAA compliant with the background color.
-const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(randomColor, fontColor)
-// console.log("is the font color AAA compliant?", aaaCompliant)
+const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(fontColor, randomColor)
+console.log("is the font color AAA compliant?", aaaCompliant)
