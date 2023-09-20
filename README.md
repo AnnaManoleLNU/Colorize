@@ -86,7 +86,7 @@ console.log("use this font color:", fontColor)
 ```
 
 ## Tests
-Manual tests were performed using the example_app folder and the use cases are documented in TESTS.md.
+Manual tests were performed using a browser application from the example_app folder. The use cases are documented in TESTS.md.
 
 ## Issues
 Problem: in some cases the font color is not WCAG AAA compliant when using rgb black or white. The color it is at least always WCAG AA compliant.
