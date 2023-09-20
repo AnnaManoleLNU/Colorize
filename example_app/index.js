@@ -39,18 +39,12 @@ const fontColorGenerator = new FontColorHelper()
 
 const paragraphBackground = document.getElementById("paragraphBackground")
 paragraphBackground.style.backgroundColor = randomColor
-// console.log("the background color is", randomColor)
 
 const fontColor = fontColorGenerator.suggestWhiteOrBlackFont(randomColor)
-// console.log("the font color is", fontColor)
-// apply it to the <p> element
 paragraph.style.color = fontColor
-
 
 // Check if the font color is AA compliant with the background color.
 const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(fontColor, randomColor)
-console.log("is the font color AA compliant?", aaCompliant)
 
 // Check if the font color is AAA compliant with the background color.
 const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(fontColor, randomColor)
-console.log("is the font color AAA compliant?", aaaCompliant)
