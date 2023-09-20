@@ -1,7 +1,7 @@
 {
   "name": "colorize",
   "version": "1.0.0",
-  "description": "add colour to your applications",
+  "description": "add color to your applications",
   "main": "index.js",
   "type": "module",
   "scripts": {
