@@ -12,7 +12,7 @@ Preconditions:
 
 Steps:
 1. Preconditions from UC 1 are met.
-2. The user calls the `generateRandomColor()` method on the ColorGenerator instance.
+2. The user calls the `generateRandomColor()` method on the ColorGenerator instance, in the script (index.js).
 3. The user assigns the rgb value to an html element.
 4. The user logs the result to the console.
 
@@ -23,7 +23,7 @@ Issues: No issues found i v1.0.0.
 
 Steps:
 1. Preconditions from UC 1 are met.
-2. The user calls the `generateLightColor()` method on the ColorGenerator instance.
+2. The user calls the `generateLightColor()` method on the ColorGenerator instance, in the script (index.js).
 3. The user assigns the rgb value to an html element.
 4. The user logs the result to the console.
 
@@ -34,7 +34,7 @@ Issues: The issue lies in defining what a light color is. In v1.0.0 a light colo
 
 Steps:
 1. Preconditions from UC 1 are met.
-2. The user calls the `generateDarkColor()` method on the ColorGenerator instance.
+2. The user calls the `generateDarkColor()` method on the ColorGenerator instance, in the script (index.js).
 3. The user assigns the rgb value to an html element.
 4. The user logs the result to the console.
 
@@ -43,9 +43,40 @@ Issues: The issue lies in defining what a dark color is. In v1.0.0 a dark color 
 
 ## UC 2 - The module generates a color scheme.
 
+Preconditions:
+The same as in UC 1 except that the ColorSchemeGenerator class is imported as well.
+
 ### UC 2.1 - The module generates a monochromatic color scheme.
 
+Steps:
+1. Preconditions from UC 2 are met.
+2. The user calls the `generateMonochromaticColorScheme()` method on the ColorSchemeGenerator instance, in the script (index.js).
+3. The user enters a parameter for the method, which is a color in rgb format as a string. The user may use the color generated in UC 1.1, UC 1.2 or UC 1.3 or may enter a color of their own.
+4. The color scheme is generated and the user logs the result to the console.
+5. The user assigns the rgb values to html elements. The color used to generate is given to a div element and the other 2 colors (from the monochromatic color scheme) are given to 2 other div elements. The divs are displayed in a row.
+
+Results: The module generates a monochromatic color scheme. The rgb strings are seen in the console and the colors are applyed to the html elements. The visual assesment concludes that the color scheme is monochromatic. UC 2.1 is completed and passes.
+Issues: In v1.0.0 the monochromatic color scheme is defined as a color scheme that has 2 colors that are lighter and darker versions of the color used to generate the scheme. 
+- The dark color may display similar rgb values to the color used to generate the scheme. This may be confusing to the user.
+- The dark color may be black. This may be confusing to the user.
+- The light color may display similar rgb values to the color used to generate the scheme. This may be confusing to the user. 
+- The light color may be white. This may be confusing to the user.
+
 ### UC 2.2 - The module generates an analogous color scheme.
+
+Steps:
+1. Preconditions from UC 2 are met.
+2. The user calls the `generateAnalogousColorScheme()` method on the ColorSchemeGenerator instance, in the script (index.js).
+3. The user enters a parameter for the method, which is a color in rgb format as a string. The user may use the color generated in UC 1.1, UC 1.2 or UC 1.3 or may enter a color of their own.
+4. The color scheme is generated and the user logs the result to the console.
+5. The user assigns the rgb values to html elements. The color used to generate is given to a div element and the other 2 colors (from the analogous color scheme) are given to 2 other div elements. The divs are displayed in a row.
+6. The results are visually assesed to see if the colors are analogous.
+7. The results are assesed with the help of an online color scheme generator. https://www.crispedge.com/generate-analogous-color/
+
+Results: The module generates an analogous color scheme. The rgb strings are seen in the console and the colors are applyed to the html elements. The visual assesment concludes that the color scheme is analogous. UC 2.2 is completed and passes.
+Issues: 
+- The website used to asses the results appears to not be online in later versions of the module. The issue is not present in v1.0.0.
+- Set values of 20 are substracted/added to the rgb values of the color used to generate the scheme. This doesn't give much variance.
 
 ## UC 3 - The module helps the user with font colors.
 
