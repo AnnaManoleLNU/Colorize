@@ -105,4 +105,3 @@ You may contribute to this project by opening an issue.
 
 ## Authors
 Anna Manole - am224wd@student.lnu.se
-
