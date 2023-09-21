@@ -22,7 +22,15 @@ Because JavaScript is not a typed language, I gave the variables inside my metho
 # Chapter 3
 These are my thoughts on the code quality of the Colorize project, as related the book "Clean Code" by Robert Martin, chapter 3. 
 
-## Table with longest method names in the project and their explanations
+## Table with longest methods in the project and their explanations
+
+| Method name and link | Number of rows (no whitespace) | Reflection and rules from "Clean Code" |
+| --- | --- | --- |
+| `calculateContrastRatio(color1, color2)` <br /> [ColorGenerator.js](./lib/js/FontColorHelper.js) | 13 | **Keep your functions small** <br />  <br /> <br /> **Do one thing** <br /> The method calculates the contrast ratio between 2 colors. |
+| `suggestWhiteOrBlackFont(color)` <br /> [FontColorHelper.js](./lib/js/FontColorHelper.js) | 15 | **Keep your functions small** <br />  <br /> <br /> **Do one thing** <br /> The method suggests a white or black font color for a given background color. |
+| `generateClockwise(color)` <br /> [ColorSchemeGenerator.js](./lib/js/ColorSchemeGenerator.js) | 17 | **Keep your functions small** <br />  <br /> <br /> **Do one thing** <br /> The method generates a color that is clockwise from the given color. |
+| `generateCounterClockwise(color)` <br /> [ColorSchemeGenerator.js](./lib/js/ColorSchemeGenerator.js) | 17 | **Keep your functions small** <br />  <br /> <br /> **Do one thing** <br /> The method generates a color that is counter-clockwise from the given color. |
+| `calculateLuminance(color)` <br /> [ColorGenerator.js](./lib/js/FontColorHelper.js) | 25 | **Keep your functions small** <br />  <br /> <br /> **Do one thing** <br /> The method calculates the luminance of a color. |
 
 ## Overall reflection on Chapter 3 - Functions
 
