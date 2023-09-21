@@ -5,8 +5,7 @@ These are my thoughts on the code quality of the Colorize project, as related th
 
 | Identifier name and explanation | Reflection and rules from "Clean Code" |
 | --- | --- |
-| `ColorGenerator`
-Class name that is used to generate colors | Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum |
+| `ColorGenerator` Class name that is used to generate colors | Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum |
 | `FontColorHelper` |  |
 | `generateLightColor/generateDarkColor()` |  |
 | `checkIfCompliantWithWCAGAA()` |  |
