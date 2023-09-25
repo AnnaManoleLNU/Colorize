@@ -47,3 +47,11 @@ I do agree that having side effects to functions is not something one should do,
 I do not agree that mixing different levels of abstractions in a function is bad. I may have a function that does a complex step that I want to reuse in other functions. I do not want to repeat the code, so I would just call the function in the main function. Having functions that are an amalgamation of other functions (same level of abstraction) requires the reader to jump about in code, which in my opinion always more confusing. And how would a function that calls several functions do only one thing? By default it does several things. <br>
 
 # Overall reflection on the project's code quality
+
+In my opinion, having the method be split into several small methods that do one thing should only be used if we want to reuse those small methods to perform operations into other similar methods. Preparing for extended functionality that is not (and probably will never be) on the agenda is not an effective use of time. Instead I would apply refactoring when needed (for example, if I need to use the same bit of code else where).
+
+I find it easier to read code top to bottom, when it's not split up into several places. But then again longer methods tend to also be confusing and illegible so I belive there should be a compromise here. My strategy so far has been commenting the obvious different steps of a method, that way I can split it internally.
+
+Of course, side effects would have to be considered when you write a method that does several things. Spliting the methods into several small ones that do one thing implies hopping around in your code and making sure those methods deliver on their promises anyway (assuming that the method names are explicit enough). 
+
+In the end, the problem is not if I can understand my own code (because I would use a strategy that suits me), the problem is finding a way for my code to communicate its intent to the target reader.
