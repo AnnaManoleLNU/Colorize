@@ -88,8 +88,8 @@ console.log("use this font color:", fontColor)
 ## Tests
 Manual tests were performed using a browser application from the example_app folder. The use cases are documented in testrapport.md.
 
-## Issues
-The issues are documented in testrapport.md.
+## Issues and testing
+Manual tests and issues are documented in testrapport.md.
 
 ## License
 MIT License - see the LICENSE.md file for details.
