@@ -54,4 +54,6 @@ I find it easier to read code top to bottom, when it's not split up into several
 
 Of course, side effects would have to be considered when you write a method that does several things. Splitting the methods into several small ones that do one thing implies hopping around in your code and making sure those methods deliver on their promises anyway (assuming that the method names are explicit enough). 
 
+Defining what a class does was somewhat difficult in my project, in the case of the FontColorHelper. Here it was difficult determining which private fields to declare inside it. Overall, I chose to have constructors with no arguments, because I wanted the user to use the methods for the functionality they needed. I did not want to force the user to create objects with arguments that they may not need. I think it's easier to think about one method at a time, rather than a whole class. This is why my methods have parameters, but my classes do not.
+
 In the end, the problem is not if I can understand my own code (because I would use a strategy that suits me), the problem is finding a way for my code to communicate its intent to the target reader.
