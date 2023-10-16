@@ -20,7 +20,7 @@ paragraph.style.color = lightColor
 
 // Generate a monochromatic color scheme.
 const colorSchemeGenerator = new ColorSchemeGenerator()
-const colorScheme = colorSchemeGenerator.generateAnalogousColorScheme(darkColor)
+const colorScheme = colorSchemeGenerator.generateMonochromaticColorScheme(darkColor)
 
 // Select all the divs to test.
 const testDiv1 = document.querySelector("#testDiv1")
@@ -44,7 +44,7 @@ const fontColor = fontColorGenerator.suggestWhiteOrBlackFont(randomColor)
 paragraph.style.color = fontColor
 
 // Check if the font color is AA compliant with the background color.
-const aaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAA(fontColor, randomColor)
+const aaCompliant = fontColorGenerator.isCompliantWithWCAGAA(fontColor, randomColor)
 
 // Check if the font color is AAA compliant with the background color.
-const aaaCompliant = fontColorGenerator.checkIfCompliantWithWCAGAAA(fontColor, randomColor)
+const aaaCompliant = fontColorGenerator.isCompliantWithWCAGAAA(fontColor, randomColor)
